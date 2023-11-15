@@ -1,0 +1,27 @@
+@import "../../config";
+
+.wrapper {
+  display: flex;
+  gap: 8px;
+
+  .button {
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faceBock {
+    background: $background-blue;
+  }
+
+  .googleMyBusiness {
+    background: $background-blue2;
+  }
+
+  .yelp {
+    background: $background-dark-red;
+  }
+}
