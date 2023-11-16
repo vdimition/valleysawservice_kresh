@@ -1,6 +1,7 @@
 import React, { type FC, useState } from 'react'
 import ReactMapGL, { Marker } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
+import { addressCords, mapboxApiAccessToken } from '../../../../config'
 
 export const MarkerIcon: React.FC<unknown> = () => (
     <svg
@@ -26,18 +27,10 @@ export const MarkerIcon: React.FC<unknown> = () => (
     </svg>
 )
 
-const markers = [
-  { id: 'france', latitude: 46.58635156377568, longitude: 2.1796793230151184 }
-]
-
-const mapboxApiAccessToken = 'pk.eyJ1Ijoidml0YWxpZXZpY2hrcmVzaCIsImEiOiJjbHAxNnFwbG8wZjQzMmpwYnA0bzZxYnEyIn0.VS6lKQlMIBNaT0L53y1YZw'
+const marker = { id: 'france', ...addressCords }
 
 export const Map: FC = () => {
-  const [viewport, setViewport] = useState({
-    latitude: 46.58635156377568,
-    longitude: 2.1796793230151184,
-    zoom: 8
-  })
+  const [viewport, setViewport] = useState({ ...addressCords, zoom: 8 })
 
   return (
            <ReactMapGL
@@ -45,18 +38,13 @@ export const Map: FC = () => {
                width="100%"
                height="320px"
                onViewportChange={setViewport}
-               scrollZoom={{ speed: 0.5, smooth: true }}
+               scrollZoom={{ speed: 1, smooth: true }}
                mapStyle="mapbox://styles/mapbox/streets-v9"
                mapboxApiAccessToken={mapboxApiAccessToken}
-
            >
-               <>
-                   {markers.map(({ id, ...marker }) => (
-                       <Marker key={id} {...marker} offsetLeft={-17.5} offsetTop={-38}>
-                           <MarkerIcon/>
-                       </Marker>
-                   ))}
-               </>
+               <Marker {...marker} offsetLeft={-17.5} offsetTop={-38}>
+                   <MarkerIcon/>
+               </Marker>
            </ReactMapGL>
   )
 }
