@@ -2,10 +2,10 @@ import React, { type FC } from 'react'
 
 import s from './index.module.scss'
 
-import faceBock from '../../icons/faceBock.svg'
-import googleMyBusiness from '../../icons/googleMyBusiness.svg'
-import yelp from '../../icons/yelp.svg'
-import { socialMedia } from '../../config'
+import faceBock from '../../../icons/faceBock.svg'
+import googleMyBusiness from '../../../icons/googleMyBusiness.svg'
+import yelp from '../../../icons/yelp.svg'
+import { socialMedia } from '../../../config'
 
 export const SocialMedia: FC = () => (
     <div className={s.wrapper}>

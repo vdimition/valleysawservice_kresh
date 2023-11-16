@@ -1,8 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, type RouteObject } from 'react-router-dom'
 
-import { BandSawBlades, Contact, Home, MetalCuttingBlades, Sharpening, Vendors } from '../pages'
-import { PublicLayout } from '../components'
+import { BandSawBlades, Contact, Home, MetalCuttingBlades, Sharpening, Vendors, PublicLayout } from '../components'
 
 export const publicRoutes: Array<RouteObject & { title: string }> = [
   { path: '/', title: 'Home', element: <Home /> },

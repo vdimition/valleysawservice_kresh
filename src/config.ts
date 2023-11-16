@@ -1,8 +1,8 @@
 export const socialMedia = {
-  faceBock: '',
-  googleMyBusiness: '',
-  yelp: ''
+  faceBock: 'https://www.facebook.com/people/Valley-Saw-Service-Inc/100063789630805/',
+  googleMyBusiness: 'https://www.google.com/maps/place/Hotel+Gega/@40.7023013,19.9563056,17z/data=!3m1!4b1!4m9!3m8!1s0x135a98afa1dcc131:0xed57db82851863d9!5m2!4m1!1i2!8m2!3d40.7022973!4d19.9588805!16s%2Fg%2F11cm_hxyh8?entry=ttu',
+  yelp: 'https://www.yelp.com/biz/valley-saw-service-phoenix-2'
 }
 
-export const contactPhone = '602-272-4082'
-export const address = '712 N 35th Ave, Phoenix, AZ 85009'
+export const contactPhone = '04-530-1316'
+export const address = 'Berat, RFG, Rruga Gjergi Fishta street'

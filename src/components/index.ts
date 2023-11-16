@@ -1,1 +1,2 @@
-export * from './PublicLayout'
+export * from './common'
+export * from './pages'

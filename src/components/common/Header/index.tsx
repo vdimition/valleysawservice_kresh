@@ -2,10 +2,10 @@ import React, { type FC } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import s from './index.module.scss'
-import logo from '../../images/logo.jpg'
+import logo from '../../../images/logo.jpg'
 import { SocialMedia } from '../SocialMedia'
-import { address, contactPhone } from '../../config'
-import { publicRoutes } from '../../router'
+import { address, contactPhone } from '../../../config'
+import { publicRoutes } from '../../../router'
 
 export const Header: FC = () => (
     <div className={s.wrapper}>
