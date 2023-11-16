@@ -17,7 +17,9 @@
     "react-scripts": "5.0.1",
     "sass": "^1.69.5",
     "typescript": "*",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@types/react-map-gl": "5.2.9",
+    "react-map-gl": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
