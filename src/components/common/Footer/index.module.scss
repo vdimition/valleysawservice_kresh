@@ -1,0 +1,113 @@
+@import "src/config";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $background-dark-gray;
+  flex-direction: column;
+
+  .content {
+    padding: 20px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    color: $text-white;
+    font-size: 13px;
+
+    .column {
+      width: 100%;
+
+      .title {
+        padding: 12px 0;
+        border-bottom: 1px solid;
+        margin-bottom: 24px;
+      }
+
+      .telephone {
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+
+      .address {
+        margin-top: 32px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+
+      .socialMedia {
+        margin-top: 24px;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: Oswald, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+
+        .navLink {
+          color: $text-white;
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+          width: fit-content;
+          position: relative;
+
+          &:hover {
+            color: $text-red;
+            border-bottom: 2px solid $border-red;
+          }
+        }
+
+        .navLinkActive {
+          color: $text-red;
+          border-bottom: 2px solid $border-red;
+        }
+      }
+
+      .form {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: flex-start;
+
+        .input {
+          max-width: 385px;
+          border: 1px solid #000;
+          background: #FFF;
+          height: 40px;
+          padding: 8px 12px;
+          box-sizing: border-box;
+        }
+
+        .submit {
+          width: fit-content;
+          padding: 10px 24px;
+          border: none;
+          border-radius: 0;
+          background: $background-red;
+          color: $text-white
+        }
+      }
+    }
+  }
+
+  .disclaimer {
+    width: 100%;
+    background: $background-black;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+
+    .text {
+      color: $text-white;
+      margin-top: 28px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}

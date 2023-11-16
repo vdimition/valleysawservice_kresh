@@ -7,10 +7,10 @@ import { Map } from './Map'
 
 export const Home: FC = () => (
     <div>
-        <BusinessPickUp />
-        <SawSharpening />
-        <CommittedToQuality />
-        <Reviews />
-        <Map />
+        <BusinessPickUp/>
+        <SawSharpening/>
+        <CommittedToQuality/>
+        <Reviews/>
+        <Map/>
     </div>
 )
