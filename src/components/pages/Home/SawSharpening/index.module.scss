@@ -6,7 +6,7 @@
   justify-content: center;
 
   .content {
-    padding-top: 40px;
+    padding: 40px 0 32px;
     .title {
       color: $text-red;
       margin-bottom: 24px;
@@ -32,7 +32,7 @@
         }
 
         .list {
-          margin-left: 42px;
+          margin: 32px 0 0 42px;
           font-weight: 700;
           display: flex;
           flex-direction: column;
