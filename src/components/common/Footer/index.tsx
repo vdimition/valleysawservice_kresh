@@ -6,14 +6,19 @@ import { NavLink } from 'react-router-dom'
 import { address, contactPhone } from '../../../config'
 import { SocialMedia } from '../SocialMedia'
 
+const defaultValues = { name: '', email: '' }
+
 export const Footer: FC = () => {
-  const [values, setValues] = useState({ name: '', email: '' })
+  const [values, setValues] = useState(defaultValues)
+
   const onValuesChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setValues((prevState) => ({ ...prevState, [e.target.name]: e.target.value }))
   }
+
   const submit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent> | React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault()
     console.log(values)
+    setValues(defaultValues)
   }
 
   return (
@@ -59,7 +64,8 @@ export const Footer: FC = () => {
                 </div>
             </div>
             <div className={s.disclaimer}>
-                <div className={`container ${s.text}`}>Images provided on this website are for personal, non-commercial use.
+                <div className={`container ${s.text}`}>Images provided on this website are for personal, non-commercial
+                    use.
                     Republication, retransmission, or reproduction of such images is strictly prohibited.
                 </div>
             </div>
