@@ -1,19 +1,38 @@
 @import "../../../../config";
 
 .wrapper {
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  animation: 0s ease 0s 1 normal none running none;
-  background-image: url("../../../../images/image_1.jpeg");
-  opacity: 1;
-  transition: opacity 0.75s ease-in-out 0s;
+  position: relative;
+  overflow: hidden;
   height: 660px;
   margin: 4px 0 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  .carousel {
+    position: absolute;
+    height: 660px;
+
+    & div[class='carousel carousel-slider'] {
+      height: 100% !important;
+
+      & div[class="slider-wrapper axis-horizontal"] {
+        height: 100% !important;
+
+        & ul[class='slider animated'] {
+          height: 100% !important;
+        }
+      }
+    }
+
+    .img {
+      height: 100%;
+    }
+  }
+
+  .contentWrapper {
+    display: flex;
+    height: 660px;
+    justify-content: center;
+    align-items: center;
+  }
 
   .content {
     background: $background-black;
