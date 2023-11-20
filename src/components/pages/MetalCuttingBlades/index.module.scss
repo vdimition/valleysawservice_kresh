@@ -1,0 +1,82 @@
+@import "../../../config";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .title {
+    color: $text-dark-gray;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .text {
+    margin-top: 16px;
+    color: $text-dark-gray;
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    margin-bottom: 42px;
+  }
+
+  .images2 {
+    margin-top: 32px;
+    margin-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .tablesWrapper {
+    margin-top: 32px;
+
+    .tableTitle {
+      color: $text-dark-gray;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .tables {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 160px;
+      gap: 55px;
+
+      .table {
+        color: $text-dark-gray;
+
+        th {
+          font-style: italic;
+          font-weight: 700;
+          text-align: start;
+        }
+
+        td, th {
+          min-width: 150px;
+          padding: 2px 10px 4px;
+          border: 1px solid $border-light-gray;
+        }
+      }
+
+      .discount {
+        margin-top: 12px;
+
+        .discountTitle {
+          color: $text-dark-gray;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .discountValue {
+          color: $text-dark-gray;
+          margin-left: 40px;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
