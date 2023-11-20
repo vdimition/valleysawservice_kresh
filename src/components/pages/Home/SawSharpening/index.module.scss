@@ -1,27 +1,13 @@
 @import "../../../../config";
 
 .wrapper {
-  border-top: 8px solid $border-dark-blue;
   display: flex;
   justify-content: center;
 
   .content {
-    padding: 40px 0 32px;
-    .title {
-      color: $text-red;
-      margin-bottom: 24px;
-      font-size: 36px;
-      font-family: Oswald, sans-serif;
-    }
-
-    .titleBorder {
-      width: 115px;
-      height: 4px;
-      background: $background-red;
-    }
+    padding: 0 0 32px;
 
     .innerContent {
-      margin-top: 48px;
       display: flex;
       justify-content: space-between;
 

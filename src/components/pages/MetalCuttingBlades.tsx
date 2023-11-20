@@ -1,5 +1,8 @@
 import React, { type FC } from 'react'
+import { Title } from '../common/Title'
 
 export const MetalCuttingBlades: FC = () => (
-    <div>MetalCuttingBlades</div>
+    <div>
+        <Title title='MetalCuttingBlades'/>
+    </div>
 )
