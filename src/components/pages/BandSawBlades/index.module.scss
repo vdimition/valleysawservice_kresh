@@ -1,0 +1,15 @@
+@import "../../../config";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .textBlock3 {
+    margin-bottom: 30px;
+  }
+}
+
+.bgRed {
+  background: $background-red;
+  color: #ECECEC;
+}

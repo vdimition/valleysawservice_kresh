@@ -1,0 +1,58 @@
+@import "../../../../config";
+
+.wrapper {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  border: 1px solid $border-white2;
+  padding: 30px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+
+  .text {
+    margin-right: 24px;
+
+    .title {
+      font-family: Oswald, sans-serif;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .bahco {
+      margin-top: 8px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .textStar1 {
+      margin-top: 6px;
+    }
+
+    .textStar2 {
+      margin-top: 4px;
+    }
+
+    .lenox {
+      margin-top: 24px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .star {
+      color: #f4e57a;
+    }
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    .img {
+      max-height: 200px;
+      border-radius: 10px;
+      border: 1px solid $border-white;
+    }
+  }
+}

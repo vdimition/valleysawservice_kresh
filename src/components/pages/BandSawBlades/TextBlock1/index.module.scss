@@ -1,0 +1,24 @@
+.wrapper {
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-between;
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .text {
+    margin-right: 24px;
+  }
+
+  .imgWrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img {
+      max-height: 116px;
+    }
+  }
+}
