@@ -57,14 +57,14 @@
           position: relative;
 
           &:hover {
-            color: $text-red;
-            border-bottom: 2px solid $border-red;
+            color: $text-primary;
+            border-bottom: 2px solid $border-primary;
           }
         }
 
         .navLinkActive {
-          color: $text-red;
-          border-bottom: 2px solid $border-red;
+          color: $text-primary;
+          border-bottom: 2px solid $border-primary;
         }
       }
 
@@ -89,7 +89,7 @@
           padding: 10px 24px;
           border: none;
           border-radius: 0;
-          background: $background-red;
+          background: $background-primary;
           color: $text-white;
           cursor: pointer;
         }

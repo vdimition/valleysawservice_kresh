@@ -9,7 +9,6 @@ export const socialMedia = {
 export const contactPhone = '04-530-1316'
 export const address = 'Berat, RFG, Rruga Gjergi Fishta street'
 export const addressCords = { latitude: 46.58635156377568, longitude: 2.1796793230151184 }
-export const mapboxApiAccessToken = 'pk.eyJ1Ijoidml0YWxpZXZpY2hrcmVzaCIsImEiOiJjbHAxNnFwbG8wZjQzMmpwYnA0bzZxYnEyIn0.VS6lKQlMIBNaT0L53y1YZw'
 
 export const reviews: Review[] = [
   {
@@ -17,11 +16,11 @@ export const reviews: Review[] = [
     author: 'Shawn P.'
   },
   {
-    content: '2',
-    author: '2'
+    content: 'Great customer service.',
+    author: 'Jose C.'
   },
   {
-    content: '3',
-    author: '3'
+    content: 'Same day turn around on custom cold saw blades!',
+    author: 'Linda T.'
   }
 ]
