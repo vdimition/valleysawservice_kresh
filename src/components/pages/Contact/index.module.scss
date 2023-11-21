@@ -1,0 +1,90 @@
+@import "../../../config";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .mt28 {
+    margin-top: 28px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+
+    .column {
+      width: 30%;
+
+      .schedule {
+        margin-top: 8px;
+        display: flex;
+
+        .minW {
+          min-width: 120px;
+        }
+      }
+
+      .img {
+        width: 100%;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+      }
+
+      .input {
+        margin-top: 16px;
+        width: 100%;
+        max-width: 385px;
+        border: 1px solid #000;
+        background: #FFF;
+        height: 40px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+      }
+
+      .textarea {
+        margin-top: 16px;
+        width: 100%;
+        max-width: 385px;
+        border: 1px solid #000;
+        background: #FFF;
+        padding: 8px 12px;
+        box-sizing: border-box;
+
+        resize: none;
+      }
+
+      .submit {
+        margin-top: 16px;
+        width: fit-content;
+        padding: 10px 24px;
+        border: none;
+        border-radius: 0;
+        background: $background-red;
+        color: $text-white;
+        cursor: pointer;
+      }
+
+      .payments {
+        display: flex;
+        justify-content: space-between;
+
+
+        .payment {
+          width: 50px;
+
+        }
+      }
+    }
+  }
+}

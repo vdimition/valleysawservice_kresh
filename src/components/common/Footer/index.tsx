@@ -2,13 +2,14 @@ import React, { type FC, useState } from 'react'
 
 import s from './index.module.scss'
 import { publicRoutes } from '../../../router'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { address, contactPhone } from '../../../config'
 import { SocialMedia } from '../SocialMedia'
 
 const defaultValues = { name: '', email: '' }
 
 export const Footer: FC = () => {
+  const location = useLocation()
   const [values, setValues] = useState(defaultValues)
 
   const onValuesChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -40,16 +41,18 @@ export const Footer: FC = () => {
                         ))}
                     </nav>
                 </div>
-                <div className={s.column}>
-                    <div className={s.title}>Contact Information</div>
-                    <div className={s.telephone}>Telephone:</div>
-                    <div>{contactPhone}</div>
-                    <div className={s.address}>Address:</div>
-                    <div>{address}</div>
-                    <div className={s.socialMedia}>
-                        <SocialMedia/>
+                {!location.pathname.includes('contact') && (
+                    <div className={s.column}>
+                        <div className={s.title}>Contact Information</div>
+                        <div className={s.telephone}>Telephone:</div>
+                        <div>{contactPhone}</div>
+                        <div className={s.address}>Address:</div>
+                        <div>{address}</div>
+                        <div className={s.socialMedia}>
+                            <SocialMedia/>
+                        </div>
                     </div>
-                </div>
+                )}
                 <div className={s.column}>
                     <div className={s.title}>Join our Mailing List</div>
 
