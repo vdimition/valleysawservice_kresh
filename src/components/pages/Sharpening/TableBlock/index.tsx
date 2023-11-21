@@ -36,6 +36,7 @@ export const TableBlock: FC<Props> = ({
 
         <div className={`${s.tableWrapper} ${bgGray ? s.bgGray : ''}`}>
             <div className={s.tableInnerWrapper}>
+                {/* TODO: add link */}
                 {Boolean(title) && <div className={s.title}>{title}</div>}
                 {Boolean(subTitle) && <div className={s.subTitle}>{subTitle}</div>}
                 {Boolean(subTitle2) && <div className={s.subTitle}>{subTitle2}</div>}
