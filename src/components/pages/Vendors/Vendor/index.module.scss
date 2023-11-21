@@ -1,0 +1,26 @@
+@import "../../../../config";
+
+.wrapper {
+  margin-top: 24px;
+
+  .name {
+    color: $text-red;
+    font-family: Oswald, sans-serif;
+    font-size: 26px;
+  }
+
+  .content {
+    margin-top: 12px;
+  }
+
+  .list {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px;
+
+    li {
+
+    }
+  }
+}

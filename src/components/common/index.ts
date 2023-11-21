@@ -1,5 +1,6 @@
 export * from './Delimiter'
 export * from './Footer'
+export * from './GradientBackground'
 export * from './Header'
 export * from './Map'
 export * from './PublicLayout'
