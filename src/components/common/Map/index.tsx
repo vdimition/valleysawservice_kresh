@@ -1,7 +1,7 @@
 import React, { type FC, useState } from 'react'
 import ReactMapGL, { Marker } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import { addressCords, mapboxApiAccessToken } from '../../../../config'
+import { addressCords, mapboxApiAccessToken } from '../../../config'
 
 export const MarkerIcon: React.FC<unknown> = () => (
     <svg

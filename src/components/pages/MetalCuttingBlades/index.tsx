@@ -1,6 +1,6 @@
 import React, { type FC } from 'react'
-import { Title } from '../../common/Title'
-import { SubTitle } from '../../common/SubTitle'
+
+import { SubTitle, Title } from '../../common'
 
 import s from './index.module.scss'
 

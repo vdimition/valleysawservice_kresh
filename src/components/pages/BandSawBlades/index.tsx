@@ -2,7 +2,7 @@ import React, { type FC } from 'react'
 
 import s from './index.module.scss'
 
-import { Title } from '../../common/Title'
+import { Title } from '../../common'
 import { TextBlock1 } from './TextBlock1'
 import { TextBlock2 } from './TextBlock2'
 import { TextBlock3 } from './TextBlock3'

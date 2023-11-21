@@ -3,7 +3,7 @@ import { BusinessPickUp } from './BusinessPickUp'
 import { SawSharpening } from './SawSharpening'
 import { CommittedToQuality } from './CommittedToQuality'
 import { Reviews } from './Reviews'
-import { Map } from './Map'
+import { Map } from '../../common'
 
 export const Home: FC = () => (
     <div>
