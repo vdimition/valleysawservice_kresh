@@ -1,7 +1,9 @@
 // COLORS
-$text-primary: #006eff; // original #006eff
-$background-primary: #006eff; // original #006eff
-$border-primary: #006eff; // original #006eff
+$primary: #FF2317;
+
+$text-primary: $primary;
+$background-primary: $primary;
+$border-primary: $primary;
 
 $text-white: #ECECEC;
 $text-black: #000000;
