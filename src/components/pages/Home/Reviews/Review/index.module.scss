@@ -1,0 +1,26 @@
+@import "../../../../../config";
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .stars {
+    color: $text-yellow;
+    font-size: 24px;
+  }
+
+  .review {
+    margin-top: 8px;
+    max-width: 790px;
+    font-size: 20px;
+  }
+
+  .author {
+    margin-top: 36px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}

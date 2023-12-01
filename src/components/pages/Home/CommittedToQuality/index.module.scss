@@ -1,0 +1,21 @@
+@import "../../../../config";
+
+.content {
+  border: 1px solid $border-white2;
+  padding: 16px 32px 24px 24px;
+  color: $text-white;
+  box-sizing: border-box;
+
+  .title {
+    font-size: 30px;
+    font-family: Oswald, sans-serif;
+  }
+
+  .text {
+    margin: 24px 0 16px;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+}

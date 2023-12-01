@@ -1,0 +1,23 @@
+@import "src/config";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .title {
+    color: $text-primary;
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+    margin: 40px 0 24px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .titleUnderline {
+    margin-top: 24px;
+    margin-bottom: 70px;
+    width: 116px;
+    height: 4px;
+    background: $background-primary;
+  }
+}

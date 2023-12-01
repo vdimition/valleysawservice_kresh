@@ -1,0 +1,29 @@
+@import "../../../config";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  color: $text-dark-gray;
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .gallery {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px 28px;
+    flex-wrap: wrap;
+
+    .img {
+      max-width: 30%;
+      border: 1px solid $border-light-gray;
+    }
+  }
+
+  .callUs {
+    margin: 32px 0;
+    text-align: center;
+  }
+}

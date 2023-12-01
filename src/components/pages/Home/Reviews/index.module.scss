@@ -1,0 +1,24 @@
+@import "../../../../config";
+
+.wrapper {
+  padding: 36px 0;
+  display: flex;
+  justify-content: center;
+
+  .innerWrapper {
+
+    .title {
+      font-size: 23px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .content {
+      height: 245px;
+      border: 4px solid $border-primary;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

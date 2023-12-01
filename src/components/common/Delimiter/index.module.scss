@@ -1,0 +1,10 @@
+@import "../../../config";
+
+.wrapper {
+  padding: 10px 0;
+
+  .delimiter {
+    height: 4px;
+    background: $background-dark-blue;
+  }
+}

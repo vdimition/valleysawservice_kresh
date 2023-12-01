@@ -1,0 +1,16 @@
+@import "../../../config";
+
+.wrapper {
+  background-image: url("../../../images/image_3.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .innerWrapper {
+    padding: 30px;
+    background: #006eff;
+    background: linear-gradient(90deg, #006eff 60%, rgba(9, 9, 121, 0) 100%);
+    display: flex;
+    justify-content: center;
+  }
+}
